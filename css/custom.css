@@ -107,6 +107,13 @@ svg.icon.faa-tada {
   background: rgba(255, 255, 255, 0.9);
 }
 
+#home_top {
+  margin: 1rem auto 0;
+  padding: 0px 15px;
+  max-width: 1170px;
+  width: 100%;
+}
+
 /* 文章页面正文背景 */
 div#post {
   background: rgba(255, 255, 255, 0.9);
