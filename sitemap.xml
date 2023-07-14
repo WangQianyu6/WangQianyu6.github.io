@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wangqianyu6.github.io/categories/index.html</loc>
+    <loc>http://wangqianyu6.github.io/posts/8e58660f.html</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://wangqianyu6.github.io/posts/8e58660f.html</loc>
+    <loc>http://wangqianyu6.github.io/categories/index.html</loc>
     
     <lastmod>2023-07-14</lastmod>
     
@@ -153,13 +153,6 @@
   </url>
   
   <url>
-    <loc>http://wangqianyu6.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2023-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wangqianyu6.github.io/tags/%E8%AE%A1%E7%AE%97%E5%87%A0%E4%BD%95/</loc>
     <lastmod>2023-07-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -167,7 +160,7 @@
   </url>
   
   <url>
-    <loc>http://wangqianyu6.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>http://wangqianyu6.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2023-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -175,6 +168,13 @@
   
   <url>
     <loc>http://wangqianyu6.github.io/tags/%E5%88%86%E7%B1%BB%E8%AE%A8%E8%AE%BA/</loc>
+    <lastmod>2023-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wangqianyu6.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
