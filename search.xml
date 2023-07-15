@@ -268,11 +268,33 @@
     
     
     <entry>
+      <title>分类📃</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>about</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><div class='checkbox cyan'><input type="radio" />            <p><strong>昵称：</strong>WQY</p>            </div> <div class='checkbox cyan'><input type="radio" />            <p><strong>性别：</strong>👧</p>            </div> <div class='checkbox cyan'><input type="radio" />            <p><strong>生日：</strong>200x.02.04</p>            </div> <div class='checkbox cyan'><input type="radio" />            <p><strong>身份：</strong>浙江师范大学在读大学生</p>            </div> <div class='checkbox cyan'><input type="radio" />            <p><strong>地点：</strong>浙江</p>            </div> <div class='checkbox cyan'><input type="radio" />            <p><strong>邮箱：</strong>wang qianyu@zjnu.edu.cn</p>            </div> ]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签🏷️</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       
     </entry>
     
@@ -334,17 +356,6 @@
     
     
     <entry>
-      <title>标签🏷️</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/coin/coin.css"/>
       <url>/css/coin/coin.css</url>
@@ -361,17 +372,6 @@
       <url>/css/coin/coin.js</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>var tipButtons = document.querySelectorAll(".tip-button");function coinAudio() {  var coinAudio = document.getElementById("coinAudio");  if (coinAudio) {    coinAudio.play(); //有音频时播放  }}// Loop through all buttons (allows for multiple buttons on page)tipButtons.forEach(button => {  var coin = button.querySelector(".coin");  // The larger the number, the slower the animation  coin.maxMoveLoopCount = 90;  button.addEventListener("click", () => {    if (/Android|webOS|BlackBerry/i.test(navigator.userAgent)) return true; //媒体选择    if (button.clicked) return;    button.classList.add("clicked");    // Wait to start flipping th coin because of the button tilt animation    setTimeout(() => {      // Randomize the flipping speeds just for fun      coin.sideRotationCount = Math.floor(Math.random() * 5) * 90;      coin.maxFlipAngle = (Math.floor(Math.random() * 4) + 3) * Math.PI;      button.clicked = true;      flipCoin();      coinAudio();    }, 50);  });  var flipCoin = () => {    coin.moveLoopCount = 0;    flipCoinLoop();  };  var resetCoin = () => {    coin.style.setProperty("--coin-x-multiplier", 0);    coin.style.setProperty("--coin-scale-multiplier", 0);    coin.style.setProperty("--coin-rotation-multiplier", 0);    coin.style.setProperty("--shine-opacity-multiplier", 0.4);    coin.style.setProperty("--shine-bg-multiplier", "50%");    coin.style.setProperty("opacity", 1);    // Delay to give the reset animation some time before you can click again    setTimeout(() => {      button.clicked = false;    }, 300);  };  var flipCoinLoop = () => {    coin.moveLoopCount++;    var percentageCompleted = coin.moveLoopCount / coin.maxMoveLoopCount;    coin.angle = -coin.maxFlipAngle * Math.pow(percentageCompleted - 1, 2) + coin.maxFlipAngle;    // Calculate the scale and position of the coin moving through the air    coin.style.setProperty("--coin-y-multiplier", -11 * Math.pow(percentageCompleted * 2 - 1, 4) + 11);    coin.style.setProperty("--coin-x-multiplier", percentageCompleted);    coin.style.setProperty("--coin-scale-multiplier", percentageCompleted * 0.6);    coin.style.setProperty("--coin-rotation-multiplier", percentageCompleted * coin.sideRotationCount);    // Calculate the scale and position values for the different coin faces    // The math uses sin/cos wave functions to similate the circular motion of 3D spin    coin.style.setProperty("--front-scale-multiplier", Math.max(Math.cos(coin.angle), 0));    coin.style.setProperty("--front-y-multiplier", Math.sin(coin.angle));    coin.style.setProperty("--middle-scale-multiplier", Math.abs(Math.cos(coin.angle), 0));    coin.style.setProperty("--middle-y-multiplier", Math.cos((coin.angle + Math.PI / 2) % Math.PI));    coin.style.setProperty("--back-scale-multiplier", Math.max(Math.cos(coin.angle - Math.PI), 0));    coin.style.setProperty("--back-y-multiplier", Math.sin(coin.angle - Math.PI));    coin.style.setProperty("--shine-opacity-multiplier", 4 * Math.sin((coin.angle + Math.PI / 2) % Math.PI) - 3.2);    coin.style.setProperty("--shine-bg-multiplier", -40 * (Math.cos((coin.angle + Math.PI / 2) % Math.PI) - 0.5) + "%");    // Repeat animation loop    if (coin.moveLoopCount < coin.maxMoveLoopCount) {      if (coin.moveLoopCount === coin.maxMoveLoopCount - 6) button.classList.add("shrink-landing");      window.requestAnimationFrame(flipCoinLoop);    } else {      button.classList.add("coin-landed");      coin.style.setProperty("opacity", 0);      setTimeout(() => {        button.classList.remove("clicked", "shrink-landing", "coin-landed");        setTimeout(() => {          resetCoin();        }, 300);      }, 1500);    }  };});]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类📃</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script>]]></content>
       
     </entry>
     
